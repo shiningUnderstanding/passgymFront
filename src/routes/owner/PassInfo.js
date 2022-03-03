@@ -21,7 +21,6 @@ const PassInfo = () => {
         alert(error.response.status);
       });
   };
-  // sessionStorage.setItem("ownerNo", pass.ownerNo);
 
   useEffect(() => {
     getPass();
