@@ -88,6 +88,7 @@ function Login() {
             sessionStorage.setItem("ownerStatus", 1);
             window.location.href = "../ownersignup/gymregist";
           }else{
+            
             window.location.href = "../owner/home";
           }
         })
