@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PassItem from "../../components/owner/PassItem";
 
-// let ownerNo = sessionStorage.setItem(ownerNo);
+
 const PassInfo = () => {
   const [pass, setPass] = useState([]);
   const getPass = () => {
     const url = "http://localhost:9999/passgym/gym/gympass/user";
     axios
-      .get(url, {
-        // params: {
-        //     ownerNo: sessionStorage.getItem(ownerNo);
-        //   },
-        })
+      .get(url, { 
+        params: {
+          ownerNo: sessionStorage.getItem("ownerNo"),
+        },
+      })
       .then((response) => {
         console.log(response);
         setPass(response.data);
