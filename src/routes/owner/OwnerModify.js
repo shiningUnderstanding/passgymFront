@@ -14,7 +14,7 @@ function OwnerModify(props){
     })
 
     const [gymInfo, setGymInfo] = useState({
-       ownerNo: sessionStorage.getItem("ownerNo"),
+        ownerNo: sessionStorage.getItem("ownerNo"),
         phoneNo: "",
         name: "",
         zipcode: "",
